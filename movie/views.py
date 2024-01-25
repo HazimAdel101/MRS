@@ -3,12 +3,15 @@ from django.shortcuts import render
 # Create your views here.
 
 def movies(request):
-    return render(request, "movies.html")
+    title = 'movies'
+    return render(request, "movies.html", {'title': title})
 
 
 def top_movies(request):
-    return render(request, "top-movies.html")
+    title = 'Top Movies'
+    return render(request, "top-movies.html", {'title': title})
 
 
 def movie_details(request):
-    return render(request, 'movie-details.html')
+    title = 'Details'
+    return render(request, 'movie-details.html', {'title': title})
