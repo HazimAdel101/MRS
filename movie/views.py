@@ -8,3 +8,7 @@ def movies(request):
 
 def top_movies(request):
     return render(request, "top-movies.html")
+
+
+def movie_details(request):
+    return render(request, 'movie-details.html')
