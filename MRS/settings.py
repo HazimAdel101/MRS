@@ -43,6 +43,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'MRS.urls'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'celebrity')
+MEDIA_URL = '/celebrity/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
