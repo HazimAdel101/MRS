@@ -9,3 +9,7 @@ urlpatterns = [
     # path(''),
     path('admin/', admin.site.urls),
 ]
+#  admin side titles
+admin.site.index_title = "MRS Admin"
+admin.site.site_header = "MRS Admin"
+admin.site.site_title = "Users"
