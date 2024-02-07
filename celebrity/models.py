@@ -9,7 +9,7 @@ class Celebrity(models.Model):
     birthday = models.DateField()
     hobby = models.CharField(max_length=250)
     follow = models.URLField()
-    image = models.ImageField(upload_to='celebrity', blank=True)
+    image = models.ImageField(upload_to='static/db_images', blank=True)
     
 
 def __str__(self):

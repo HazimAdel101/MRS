@@ -18,7 +18,7 @@ class Movie(models.Model):
         validators=[MinValueValidator(0), MaxValueValidator(5)]
     )    
     description = models.TextField()
-    image = models.ImageField(upload_to='celebrity', blank=True, null=True)
+    image = models.ImageField(upload_to='static/db_images', blank=True, null=True)
     actors = models.ManyToManyField(Celebrity)
     views = models.IntegerField(default=0)
     

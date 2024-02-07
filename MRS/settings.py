@@ -43,8 +43,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'MRS.urls'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'celebrity')
-MEDIA_URL = '/celebrity/'
+MEDIA_ROOT = os.path.join(BASE_DIR)
+MEDIA_URL = '/data/db_images/'
 
 TEMPLATES = [
     {
@@ -117,7 +117,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "/static")
+    # os.path.join(BASE_DIR, "/static"),
+    # os.path.join(BASE_DIR, "/celebrity/celebrity")
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
